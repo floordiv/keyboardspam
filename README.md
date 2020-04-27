@@ -15,4 +15,7 @@
     --timeout - wait n seconds between sending
   
     --infinity-duration - send file content again and again
+    
+  ### REQUIREMENTS:
+    pynput
   
