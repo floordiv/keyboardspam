@@ -7,7 +7,7 @@
 
   python3 clicker.py [file] [arguments]
 
-  ARGUMENTS:  
+  ### ARGUMENTS:  
    --split-by-lines - send not alone words, but whole lines
   
    --begin-timeout <seconds> - wait n seconds before beginning
