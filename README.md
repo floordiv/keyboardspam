@@ -3,7 +3,8 @@
 
 #### This shit just takes text from the given file and types it on your keyboard
 
-##**USAGE**:
+## **USAGE**:
+
   --split-by-lines - send not alone words, but whole lines
   
   --begin-timeout <seconds> - wait n seconds before beginning
