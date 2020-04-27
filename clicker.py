@@ -17,12 +17,9 @@ def type_word(word):
 
 
 def send_words(source, timeout):
-    try:
-        for word in source:
-            type_word(word)
-            sleep(timeout)
-    except KeyboardInterrupt:
-        print('\nStopping clicker...')
+    for word in source:
+        type_word(word)
+        sleep(timeout)
 
 
 if __name__ == '__main__':
@@ -53,8 +50,13 @@ if __name__ == '__main__':
     timeout = 0 if '--timeout' not in sys.argv else float(sys.argv[sys.argv.index('--timeout') + 1])
 
     # mainloop
-    if '--infinity-duration' not in sys.argv:
-        send_words(source, timeout)
-    else:
-        while True:
+    try:
+        if '--infinity-duration' not in sys.argv:
             send_words(source, timeout)
+        else:
+            while True:
+                send_words(source, timeout)
+                sleep(1)
+    except KeyboardInterrupt:
+        print('\nQuitting...')
+
