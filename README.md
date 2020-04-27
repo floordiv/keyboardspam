@@ -5,11 +5,14 @@
 
 ## **USAGE**:
 
-  --split-by-lines - send not alone words, but whole lines
-  
-  --begin-timeout <seconds> - wait n seconds before beginning
+  python3 clicker.py [file] [arguments]
 
-  --timeout - wait n seconds between sending
+  ARGUMENTS:  
+    --split-by-lines - send not alone words, but whole lines
   
-  --infinity-duration - send file content again and again
+    --begin-timeout <seconds> - wait n seconds before beginning
+
+    --timeout - wait n seconds between sending
+  
+    --infinity-duration - send file content again and again
   
