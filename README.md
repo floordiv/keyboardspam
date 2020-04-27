@@ -8,11 +8,11 @@
   python3 clicker.py [file] [arguments]
 
   ### ARGUMENTS:  
-   --split-by-lines - send not alone words, but whole lines
+    --split-by-lines - send not alone words, but whole lines
   
-   --begin-timeout <seconds> - wait n seconds before beginning
+    --begin-timeout <seconds> - wait n seconds before beginning
 
-   --timeout - wait n seconds between sending
+    --timeout - wait n seconds between sending
   
-   --infinity-duration - send file content again and again
+    --infinity-duration - send file content again and again
   
